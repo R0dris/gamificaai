@@ -21,6 +21,7 @@ html
 {
     scroll-behavior: smooth;
 }
+
 .container-grid
 {
     width: 80%;
@@ -33,7 +34,7 @@ html
     height: 100vh;
     background-image: linear-gradient(90deg, rgba(53, 24, 104, 1)0%, rgba(53, 24, 104, 0.8)100%),url(bg-room\ 1.png); 
     background-repeat: no-repeat;
-    background-position: 165% 40%;  
+        
 }
 
 
@@ -309,7 +310,7 @@ h2
     resize: none;
 }
 
-.campo input:focus, .campo-textarea textarea:focus
+.campo input:focus, .campo-textarea textarea:focus  
 {
     outline: 2px solid var(--laranja-gamifica);
 }
