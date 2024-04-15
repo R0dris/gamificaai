@@ -95,6 +95,31 @@ header img
     font-size: 32px;
 }
 
+.conteudo-banner span
+{
+    overflow: hidden;
+    display: block;
+    border-right: 6px solid var(--laranja-gamifica);
+    white-space: nowrap;
+    animation:  
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ; 
+}
+
+@keyframes digitando
+{
+    from{width: 0%}
+    to{width: 100%}
+}
+
+@keyframes cursor
+{
+    from,to{border-color: transparent;}
+
+    50% {border-color: var(--laranja-gamifica)}
+}
+
 #sobre
 {
     height: 800px;
@@ -380,6 +405,11 @@ footer .container-grid
     width: 240px;
     display: flex;
     justify-content: space-between;
+}
+
+.icones-redes a
+{
+    color: white;
 }
 
 .icones-redes a:hover
