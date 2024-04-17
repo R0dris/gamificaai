@@ -496,7 +496,6 @@ footer .container-grid
     footer .container-grid
     {
         flex-direction: column;
-        padding: 80px;
     }
 
     footer img
@@ -517,3 +516,166 @@ footer .container-grid
     }
 
 }
+
+    @media screen and (max-width: 800px) 
+    {
+        .card
+        {
+            flex-basis: 45%;
+        }    
+    }
+
+    @media screen and (max-width: 640px) 
+    {
+        #sobre
+        {
+            height: unset;
+            margin-bottom: 40px;
+        }    
+
+        #sobre h2
+        {
+            margin-bottom: 50px;
+        }
+
+        #sobre p
+        {
+            margin-bottom: 30px;
+        }
+
+        #cases
+        {
+            margin-bottom: unset;
+        }
+
+        #portfolio a 
+        {
+            width: 100%;
+            text-align: center;
+        }
+
+    .campo, .campo-textarea, #contato form button
+    {
+        width: 75%;
+    }
+
+    }
+
+    @media screen and (max-width: 526px)
+    {
+        
+        .container-grid
+        {
+            width: 90%;
+        }
+
+        header img
+        {
+            width: 200px;
+        }
+
+
+        .banner
+        {
+            background-size: cover;
+        }
+
+        .conteudo-banner p
+        {
+            font-size: 22px;
+        }
+
+        nav.menu
+        {
+            width: 100%;
+            display: none;
+        }
+
+        #sobre 
+        {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #sobre p
+        {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #cases.container-cards
+        {
+            width: 100%;
+            
+        }
+
+        .container-cards
+        {
+            gap: 40px;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        .card
+        {
+            flex-basis: unset;
+            height: 400px;
+            width: 280px;
+        }
+        
+        .card:first-child   
+        {
+            margin-left: 30px;
+        }
+
+        .card:last-child 
+        {
+            margin-right: 30px;
+        }
+        #portfolio
+        {
+            margin-bottom: 0px;
+        }
+        #contato
+        {
+            padding-top: 150px;
+            background-color: var(--roxo-gamifica);
+            color: white;
+            margin-bottom: 0px;
+        }
+
+        #contato h2
+        {
+            margin-bottom: 0px;
+        }
+
+        #contato form
+        {
+            width: 100%;
+            border-radius: 0px;
+        }
+    }
+
+    @media screen and (max-width:400px)
+    {
+        .conteudo-banner p
+        {
+            font-size: 20px;
+        }
+
+        header img 
+        {
+            width: 160px;
+        }
+
+        header svg
+        {
+            width: 40px;
+        }
+
+        footer img
+        {
+            width: 200px;
+        }
+    }
