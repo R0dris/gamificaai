@@ -29,9 +29,55 @@ function abrirfecharmenu ()
     }
 }
 
-window.onresize();  {
+window.onresize = () =>  {
     menu.classList.remove ("menu-fechado")
     iconeX.style.display = "inline"
     iconeBarras.style.display = "none"
 
+}
+
+
+// Função carrossel
+
+let slides = [
+    'primeiro-banner',
+    'segundo-banner',
+    'terceiro-banner'
+]
+
+let slideAtual = 0
+
+let numSlides = slides.length
+
+let banner = document.querySelector(".banner")
+
+banner.classList.add(slides[slideAtual])
+
+
+const proxSlide = () =>
+{
+    banner.classList.remove(slides[slideAtual])
+
+    if (slideAtual < (numSlides - 1))
+    {
+        slideAtual++
+    }
+    else{
+        slideAtual = 0
+    }
+
+    banner.classList.add(slides[slideAtual])
+}
+
+const slideAnt = () =>
+{
+    banner.classList.remove(slides[slideAtual])
+    if (slideAtual > 0)
+    {
+        slideAtual--
+    }
+    else{
+        slideAtual = numSlides - 1
+    }
+    banner.classList.add(slides[slideAtual])
 }
